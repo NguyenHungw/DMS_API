@@ -1,0 +1,1289 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "DMS API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Auth/dang-ky": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangKyDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangKyDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangKyDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/dang-nhap": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangNhapDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangNhapDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangNhapDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ChiaSe/{taiLieuId}": {
+      "get": {
+        "tags": [
+          "ChiaSe"
+        ],
+        "parameters": [
+          {
+            "name": "taiLieuId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ChiaSe/nguoi-dung": {
+      "post": {
+        "tags": [
+          "ChiaSe"
+        ],
+        "parameters": [
+          {
+            "name": "taiLieuId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "quyen",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "View"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ChiaSe/phong-ban": {
+      "post": {
+        "tags": [
+          "ChiaSe"
+        ],
+        "parameters": [
+          {
+            "name": "taiLieuId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "phongBanId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "quyen",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "View"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ChiaSe/{id}": {
+      "delete": {
+        "tags": [
+          "ChiaSe"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lookup/phong-ban": {
+      "get": {
+        "tags": [
+          "Lookup"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lookup/vai-tro": {
+      "get": {
+        "tags": [
+          "Lookup"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lookup/loai-tai-lieu": {
+      "get": {
+        "tags": [
+          "Lookup"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lookup/chuyen-muc": {
+      "get": {
+        "tags": [
+          "Lookup"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lookup/danh-muc": {
+      "get": {
+        "tags": [
+          "Lookup"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lookup/quyen-han": {
+      "get": {
+        "tags": [
+          "Lookup"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NguoiDung": {
+      "get": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NguoiDung"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NguoiDung"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NguoiDung"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NguoiDung/{id}": {
+      "get": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NguoiDung"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NguoiDung"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NguoiDung"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NhatKy": {
+      "get": {
+        "tags": [
+          "NhatKy"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiLieu": {
+      "get": {
+        "tags": [
+          "TaiLieu"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TaiLieu"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaiLieu"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaiLieu"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaiLieu"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiLieu/tim-kiem": {
+      "get": {
+        "tags": [
+          "TaiLieu"
+        ],
+        "parameters": [
+          {
+            "name": "tuKhoa",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "danhMucId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ownerId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "tuNgay",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "denNgay",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiLieu/{id}": {
+      "get": {
+        "tags": [
+          "TaiLieu"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TaiLieu"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiLieu/phien-ban": {
+      "post": {
+        "tags": [
+          "TaiLieu"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhienBanTaiLieu"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhienBanTaiLieu"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhienBanTaiLieu"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiLieu/{id}/gui-duyet": {
+      "patch": {
+        "tags": [
+          "TaiLieu"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiLieu/{id}/phe-duyet": {
+      "patch": {
+        "tags": [
+          "TaiLieu"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TaiLieu/{id}/ban-hanh": {
+      "patch": {
+        "tags": [
+          "TaiLieu"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ThongBao": {
+      "get": {
+        "tags": [
+          "ThongBao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ThongBao"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThongBao"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThongBao"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThongBao"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ThongBao/{id}": {
+      "get": {
+        "tags": [
+          "ThongBao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ThongBao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BinhLuan": {
+        "required": [
+          "noiDung"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "thongBaoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "thongBao": {
+            "$ref": "#/components/schemas/ThongBao"
+          },
+          "tacGiaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tacGia": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "noiDung": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "thoiGian": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChiaSeTaiLieu": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "taiLieuId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "taiLieu": {
+            "$ref": "#/components/schemas/TaiLieu"
+          },
+          "nguoiDuocChiaSeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nguoiDuocChiaSe": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "phongBanDuocChiaSeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "phongBanDuocChiaSe": {
+            "$ref": "#/components/schemas/PhongBan"
+          },
+          "quyenHan": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngayChiaSe": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChuyenMuc": {
+        "required": [
+          "tenChuyenMuc"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenChuyenMuc": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mauSac": {
+            "type": "string",
+            "nullable": true
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DangKyDTO": {
+        "type": "object",
+        "properties": {
+          "hoTen": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "matKhau": {
+            "type": "string",
+            "nullable": true
+          },
+          "vaiTroId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "phongBanId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DangNhapDTO": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "matKhau": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DanhMuc": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenDanhMuc": {
+            "type": "string",
+            "nullable": true
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          },
+          "danhMucChaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "danhMucCha": {
+            "$ref": "#/components/schemas/DanhMuc"
+          },
+          "danhMucCon": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DanhMuc"
+            },
+            "nullable": true
+          },
+          "danhSachTaiLieu": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TaiLieu"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoaiTaiLieu": {
+        "required": [
+          "tenLoai"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenLoai": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NguoiDung": {
+        "required": [
+          "email",
+          "hoTen",
+          "matKhau"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hoTen": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "matKhau": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "vaiTroId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vaiTro": {
+            "$ref": "#/components/schemas/VaiTro"
+          },
+          "phongBanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "phongBan": {
+            "$ref": "#/components/schemas/PhongBan"
+          },
+          "trangThai": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngayTao": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PhienBanTaiLieu": {
+        "required": [
+          "duongDanFile",
+          "soPhienBan"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "taiLieuId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "taiLieu": {
+            "$ref": "#/components/schemas/TaiLieu"
+          },
+          "soPhienBan": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "duongDanFile": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "ngayTao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "nguoiTaoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nguoiTao": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "ghiChuThayDoi": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PhongBan": {
+        "required": [
+          "tenPhongBan"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenPhongBan": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          },
+          "danhSachNguoiDung": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NguoiDung"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaiLieu": {
+        "required": [
+          "tenTaiLieu"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenTaiLieu": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "loaiTaiLieuId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "loaiTaiLieu": {
+            "$ref": "#/components/schemas/LoaiTaiLieu"
+          },
+          "phongBanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "phongBan": {
+            "$ref": "#/components/schemas/PhongBan"
+          },
+          "chuSoHuuId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "chuSoHuu": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "danhMucId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "danhMuc": {
+            "$ref": "#/components/schemas/DanhMuc"
+          },
+          "ngayTao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ngayCapNhat": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dungLuong": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "string",
+            "nullable": true
+          },
+          "accessLevel": {
+            "type": "string",
+            "nullable": true
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          },
+          "danhSachPhienBan": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PhienBanTaiLieu"
+            },
+            "nullable": true
+          },
+          "danhSachChiaSe": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChiaSeTaiLieu"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ThongBao": {
+        "required": [
+          "noiDung",
+          "tieuDe"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tieuDe": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "noiDung": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tacGiaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tacGia": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "ngayDang": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "chuyenMucId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "chuyenMuc": {
+            "$ref": "#/components/schemas/ChuyenMuc"
+          },
+          "isPinned": {
+            "type": "boolean"
+          },
+          "danhSachBinhLuan": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BinhLuan"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VaiTro": {
+        "required": [
+          "tenVaiTro"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenVaiTro": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Chỉ cần dán Token vào đây (Hệ thống sẽ tự thêm tiền tố Bearer)",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

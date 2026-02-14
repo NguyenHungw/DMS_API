@@ -1,0 +1,713 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BackEnd\\DMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\controllers\\tailieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\controllers\\tailieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\services\\tailieuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\services\\tailieuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\entities\\tailieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\entities\\tailieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\infrastructure\\repositories\\tailieurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\infrastructure\\repositories\\tailieurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\interfaces\\itailieurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\interfaces\\itailieurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\services\\xacthucservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\services\\xacthucservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\infrastructure\\repositories\\xacthucrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\infrastructure\\repositories\\xacthucrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\infrastructure\\data\\dmscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\infrastructure\\data\\dmscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\mappings\\mappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\mappings\\mappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\controllers\\lookupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\controllers\\lookupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\controllers\\chiasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\controllers\\chiasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\services\\nhatkyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\services\\nhatkyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\interfaces\\ichatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\interfaces\\ichatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\interfaces\\ithongbaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\interfaces\\ithongbaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\interfaces\\ixacthucrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\interfaces\\ixacthucrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\interfaces\\inhatkyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\interfaces\\inhatkyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\interfaces\\inguoidungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\interfaces\\inguoidungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\interfaces\\ilookuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\interfaces\\ilookuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\interfaces\\ichiaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\interfaces\\ichiaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\infrastructure\\repositories\\lookuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\infrastructure\\repositories\\lookuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\infrastructure\\repositories\\chiaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\infrastructure\\repositories\\chiaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\infrastructure\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\infrastructure\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\infrastructure\\repositories\\nhatkyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\infrastructure\\repositories\\nhatkyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\infrastructure\\repositories\\nguoidungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\infrastructure\\repositories\\nguoidungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\services\\lookupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\services\\lookupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\entities\\phienbantailieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\entities\\phienbantailieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\entities\\phongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\entities\\phongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\entities\\tinnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\entities\\tinnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\domain\\entities\\binhluan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\domain\\entities\\binhluan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\services\\chiaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\services\\chiaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\api\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\api\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\services\\thongbaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\services\\thongbaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\services\\permissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\services\\permissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\application\\services\\nguoidungservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\application\\services\\nguoidungservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\controllers\\nhatkycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\controllers\\nhatkycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\controllers\\thongbaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\controllers\\thongbaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\infrastructure\\data\\migrations\\20260208141714_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\infrastructure\\data\\migrations\\20260208141714_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|d:\\backend\\dms\\dms\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BFFF6B1-F17D-419C-B546-29ACB9FDEA5C}|DMS\\DMS.csproj|solutionrelative:dms\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaiLieuController.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Controllers\\TaiLieuController.cs",
+              "RelativeDocumentMoniker": "DMS\\Controllers\\TaiLieuController.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Controllers\\TaiLieuController.cs",
+              "RelativeToolTip": "DMS\\Controllers\\TaiLieuController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAA9wBUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T16:38:33.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaiLieuService.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\TaiLieuService.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Services\\TaiLieuService.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\TaiLieuService.cs",
+              "RelativeToolTip": "DMS\\Application\\Services\\TaiLieuService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:02:27.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ITaiLieuRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\ITaiLieuRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Interfaces\\ITaiLieuRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\ITaiLieuRepository.cs",
+              "RelativeToolTip": "DMS\\Domain\\Interfaces\\ITaiLieuRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:11:58.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaiLieuRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\TaiLieuRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Infrastructure\\Repositories\\TaiLieuRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\TaiLieuRepository.cs",
+              "RelativeToolTip": "DMS\\Infrastructure\\Repositories\\TaiLieuRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwCEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:00:48.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaiLieu.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\TaiLieu.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Entities\\TaiLieu.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\TaiLieu.cs",
+              "RelativeToolTip": "DMS\\Domain\\Entities\\TaiLieu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T06:27:30.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NguoiDungController.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Controllers\\NguoiDungController.cs",
+              "RelativeDocumentMoniker": "DMS\\Controllers\\NguoiDungController.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Controllers\\NguoiDungController.cs",
+              "RelativeToolTip": "DMS\\Controllers\\NguoiDungController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:01:02.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "XacThucService.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\XacThucService.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Services\\XacThucService.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\XacThucService.cs",
+              "RelativeToolTip": "DMS\\Application\\Services\\XacThucService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T06:04:29.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "XacThucRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\XacThucRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Infrastructure\\Repositories\\XacThucRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\XacThucRepository.cs",
+              "RelativeToolTip": "DMS\\Infrastructure\\Repositories\\XacThucRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:10:35.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\appsettings.json",
+              "RelativeDocumentMoniker": "DMS\\appsettings.json",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\appsettings.json",
+              "RelativeToolTip": "DMS\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-08T14:04:23.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "DMS\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "DMS\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T06:00:36.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DMSContext.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Data\\DMSContext.cs",
+              "RelativeDocumentMoniker": "DMS\\Infrastructure\\Data\\DMSContext.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Data\\DMSContext.cs",
+              "RelativeToolTip": "DMS\\Infrastructure\\Data\\DMSContext.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAQwDoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:05:19.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MappingExtensions.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Mappings\\MappingExtensions.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Mappings\\MappingExtensions.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Mappings\\MappingExtensions.cs",
+              "RelativeToolTip": "DMS\\Application\\Mappings\\MappingExtensions.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAswHIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T04:11:06.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LookupController.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Controllers\\LookupController.cs",
+              "RelativeDocumentMoniker": "DMS\\Controllers\\LookupController.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Controllers\\LookupController.cs",
+              "RelativeToolTip": "DMS\\Controllers\\LookupController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T16:36:42.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChiaSeController.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Controllers\\ChiaSeController.cs",
+              "RelativeDocumentMoniker": "DMS\\Controllers\\ChiaSeController.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Controllers\\ChiaSeController.cs",
+              "RelativeToolTip": "DMS\\Controllers\\ChiaSeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T06:28:02.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NhatKyService.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\NhatKyService.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Services\\NhatKyService.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\NhatKyService.cs",
+              "RelativeToolTip": "DMS\\Application\\Services\\NhatKyService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T06:00:13.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IChatRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\IChatRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Interfaces\\IChatRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\IChatRepository.cs",
+              "RelativeToolTip": "DMS\\Domain\\Interfaces\\IChatRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:11:51.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IThongBaoRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\IThongBaoRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Interfaces\\IThongBaoRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\IThongBaoRepository.cs",
+              "RelativeToolTip": "DMS\\Domain\\Interfaces\\IThongBaoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:12:00.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IXacThucRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\IXacThucRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Interfaces\\IXacThucRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\IXacThucRepository.cs",
+              "RelativeToolTip": "DMS\\Domain\\Interfaces\\IXacThucRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:11:59.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "INhatKyRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\INhatKyRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Interfaces\\INhatKyRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\INhatKyRepository.cs",
+              "RelativeToolTip": "DMS\\Domain\\Interfaces\\INhatKyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:11:57.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IChiaSeRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\IChiaSeRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Interfaces\\IChiaSeRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\IChiaSeRepository.cs",
+              "RelativeToolTip": "DMS\\Domain\\Interfaces\\IChiaSeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:11:54.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ChiaSeRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\ChiaSeRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Infrastructure\\Repositories\\ChiaSeRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\ChiaSeRepository.cs",
+              "RelativeToolTip": "DMS\\Infrastructure\\Repositories\\ChiaSeRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowBEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:09:45.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ChatRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\ChatRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Infrastructure\\Repositories\\ChatRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\ChatRepository.cs",
+              "RelativeToolTip": "DMS\\Infrastructure\\Repositories\\ChatRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:09:40.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ILookupRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\ILookupRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Interfaces\\ILookupRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\ILookupRepository.cs",
+              "RelativeToolTip": "DMS\\Domain\\Interfaces\\ILookupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T02:29:17.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "INguoiDungRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\INguoiDungRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Interfaces\\INguoiDungRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Interfaces\\INguoiDungRepository.cs",
+              "RelativeToolTip": "DMS\\Domain\\Interfaces\\INguoiDungRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:04:17.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "NhatKyRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\NhatKyRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Infrastructure\\Repositories\\NhatKyRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\NhatKyRepository.cs",
+              "RelativeToolTip": "DMS\\Infrastructure\\Repositories\\NhatKyRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T03:09:57.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LookupRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\LookupRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Infrastructure\\Repositories\\LookupRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\LookupRepository.cs",
+              "RelativeToolTip": "DMS\\Infrastructure\\Repositories\\LookupRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T02:29:00.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\ChatService.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Services\\ChatService.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\ChatService.cs",
+              "RelativeToolTip": "DMS\\Application\\Services\\ChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T05:59:43.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ChiaSeService.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\ChiaSeService.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Services\\ChiaSeService.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\ChiaSeService.cs",
+              "RelativeToolTip": "DMS\\Application\\Services\\ChiaSeService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T05:59:54.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "NguoiDungRepository.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\NguoiDungRepository.cs",
+              "RelativeDocumentMoniker": "DMS\\Infrastructure\\Repositories\\NguoiDungRepository.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Repositories\\NguoiDungRepository.cs",
+              "RelativeToolTip": "DMS\\Infrastructure\\Repositories\\NguoiDungRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA7wBEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:02:38.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Program.cs",
+              "RelativeDocumentMoniker": "DMS\\Program.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Program.cs",
+              "RelativeToolTip": "DMS\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-07T12:16:04.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LookupService.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\LookupService.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Services\\LookupService.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\LookupService.cs",
+              "RelativeToolTip": "DMS\\Application\\Services\\LookupService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAnwBUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T06:00:03.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PhienBanTaiLieu.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\PhienBanTaiLieu.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Entities\\PhienBanTaiLieu.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\PhienBanTaiLieu.cs",
+              "RelativeToolTip": "DMS\\Domain\\Entities\\PhienBanTaiLieu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T16:49:38.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TinNhan.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\TinNhan.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Entities\\TinNhan.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\TinNhan.cs",
+              "RelativeToolTip": "DMS\\Domain\\Entities\\TinNhan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T16:49:34.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PhongBan.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\PhongBan.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Entities\\PhongBan.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\PhongBan.cs",
+              "RelativeToolTip": "DMS\\Domain\\Entities\\PhongBan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T16:49:36.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AuthDTOs.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\API\\DTOs\\AuthDTOs.cs",
+              "RelativeDocumentMoniker": "DMS\\API\\DTOs\\AuthDTOs.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\API\\DTOs\\AuthDTOs.cs",
+              "RelativeToolTip": "DMS\\API\\DTOs\\AuthDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T05:59:33.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "BinhLuan.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\BinhLuan.cs",
+              "RelativeDocumentMoniker": "DMS\\Domain\\Entities\\BinhLuan.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Domain\\Entities\\BinhLuan.cs",
+              "RelativeToolTip": "DMS\\Domain\\Entities\\BinhLuan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:01:22.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "NguoiDungService.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\NguoiDungService.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Services\\NguoiDungService.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\NguoiDungService.cs",
+              "RelativeToolTip": "DMS\\Application\\Services\\NguoiDungService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:01:04.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ThongBaoService.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\ThongBaoService.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Services\\ThongBaoService.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\ThongBaoService.cs",
+              "RelativeToolTip": "DMS\\Application\\Services\\ThongBaoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T06:04:28.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PermissionService.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\PermissionService.cs",
+              "RelativeDocumentMoniker": "DMS\\Application\\Services\\PermissionService.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Application\\Services\\PermissionService.cs",
+              "RelativeToolTip": "DMS\\Application\\Services\\PermissionService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T06:00:22.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "NhatKyController.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Controllers\\NhatKyController.cs",
+              "RelativeDocumentMoniker": "DMS\\Controllers\\NhatKyController.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Controllers\\NhatKyController.cs",
+              "RelativeToolTip": "DMS\\Controllers\\NhatKyController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T06:00:44.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20260208141714_InitialCreate.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Data\\Migrations\\20260208141714_InitialCreate.cs",
+              "RelativeDocumentMoniker": "DMS\\Infrastructure\\Data\\Migrations\\20260208141714_InitialCreate.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Infrastructure\\Data\\Migrations\\20260208141714_InitialCreate.cs",
+              "RelativeToolTip": "DMS\\Infrastructure\\Data\\Migrations\\20260208141714_InitialCreate.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:17:34.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "DMS\\WeatherForecast.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\WeatherForecast.cs",
+              "RelativeToolTip": "DMS\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T14:05:48.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ThongBaoController.cs",
+              "DocumentMoniker": "D:\\BackEnd\\DMS\\DMS\\Controllers\\ThongBaoController.cs",
+              "RelativeDocumentMoniker": "DMS\\Controllers\\ThongBaoController.cs",
+              "ToolTip": "D:\\BackEnd\\DMS\\DMS\\Controllers\\ThongBaoController.cs",
+              "RelativeToolTip": "DMS\\Controllers\\ThongBaoController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwD0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T16:38:18.272Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
