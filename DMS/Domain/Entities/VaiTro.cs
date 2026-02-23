@@ -12,5 +12,7 @@ namespace DMS.Domain.Entities
         public string TenVaiTro { get; set; } = string.Empty; // Admin, Manager, User, Guest
         
         public string? MoTa { get; set; }
+
+        public ICollection<VaiTroQuyenHan> VaiTroQuyenHans { get; set; } = new List<VaiTroQuyenHan>();
     }
 }

@@ -29,11 +29,27 @@ namespace DMS.Infrastructure.Repositories
 
         public async Task Xoa(int id)
         {
-            var news = await GetByIdAsync(id);
+            var news = await LayTheoIdVoiChiTiet(id);
             if (news != null)
             {
-                Delete( news);
+                // Xóa tất cả bình luận liên quan trước để tránh lỗi FK constraint
+                if (news.DanhSachBinhLuan != null && news.DanhSachBinhLuan.Any())
+                {
+                    _context.BinhLuans.RemoveRange(news.DanhSachBinhLuan);
+                }
+
+                _dbSet.Remove(news);
                 await SaveChangesAsync();
+            }
+        }
+
+        public async Task XoaBinhLuan(int id)
+        {
+            var comment = await _context.BinhLuans.FindAsync(id);
+            if (comment != null)
+            {
+                _context.BinhLuans.Remove(comment);
+                await _context.SaveChangesAsync();
             }
         }
 

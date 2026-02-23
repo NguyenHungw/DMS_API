@@ -21,6 +21,8 @@ namespace DMS.API.DTOs
         public int? ChuSoHuuId { get; set; }
         public string? TenChuSoHuu { get; set; }
         
+        public string? DuongDan { get; set; }
+        
         public List<PhienBanDto> Versions { get; set; } = new List<PhienBanDto>();
     }
 

@@ -25,6 +25,10 @@ namespace DMS.Application.Services
             return data?.ToDto();
         }
 
-        public async Task GuiTinNhan(TinNhan m) => await _repo.ThemTinNhan(m);
+        public async Task GuiTinNhan(TinNhan m) 
+        {
+            await _repo.ThemTinNhan(m);
+            await _repo.SaveChangesAsync();
+        }
     }
 }

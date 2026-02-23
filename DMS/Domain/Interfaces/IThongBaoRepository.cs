@@ -8,6 +8,7 @@ namespace DMS.Domain.Interfaces
         Task<ThongBao?> LayTheoIdVoiChiTiet(int id);
         Task Them(ThongBao thongBao);
         Task Xoa(int id);
+        Task XoaBinhLuan(int id);
         
         // Categories
         Task<IEnumerable<ChuyenMuc>> LayTatCaChuyenMuc();

@@ -36,6 +36,7 @@ namespace DMS.Application.Mappings
                 TenPhongBan = entity.PhongBan?.TenPhongBan,
                 ChuSoHuuId = entity.ChuSoHuuId,
                 TenChuSoHuu = entity.ChuSoHuu?.HoTen,
+                DuongDan = entity.DanhSachPhienBan?.OrderByDescending(v => v.NgayTao).FirstOrDefault()?.DuongDanFile,
                 Versions = entity.DanhSachPhienBan?.Select(v => v.ToPhienBanDto()).ToList() ?? new List<PhienBanDto>()
             };
         }
@@ -64,7 +65,12 @@ namespace DMS.Application.Mappings
                 VaiTroId = entity.VaiTroId,
                 TenVaiTro = entity.VaiTro?.TenVaiTro,
                 PhongBanId = entity.PhongBanId,
-                TenPhongBan = entity.PhongBan?.TenPhongBan
+                TenPhongBan = entity.PhongBan?.TenPhongBan,
+                QuyenHans = entity.VaiTro?.VaiTroQuyenHans?
+                    .Select(vq => vq.QuyenHan?.TenQuyenHan ?? "")
+                    .Where(n => !string.IsNullOrEmpty(n))
+                    .ToList() ?? new List<string>(),
+                HinhAnh = entity.HinhAnh
             };
         }
         public static ThongBaoDto ToDto(this ThongBao entity)
@@ -80,7 +86,22 @@ namespace DMS.Application.Mappings
                 ChuyenMucId = entity.ChuyenMucId,
                 TenChuyenMuc = entity.ChuyenMuc?.TenChuyenMuc,
                 TacGiaId = entity.TacGiaId,
-                TenTacGia = entity.TacGia?.HoTen
+                TenTacGia = entity.TacGia?.HoTen,
+                DanhSachBinhLuan = entity.DanhSachBinhLuan?.Select(c => c.ToBinhLuanDto()).ToList() ?? new List<BinhLuanDto>()
+            };
+        }
+
+        public static BinhLuanDto ToBinhLuanDto(this BinhLuan entity)
+        {
+            if (entity == null) return null!;
+            return new BinhLuanDto
+            {
+                Id = entity.Id,
+                ThongBaoId = entity.ThongBaoId,
+                TacGiaId = entity.TacGiaId,
+                TenNguoiDung = entity.TacGia?.HoTen ?? "Ẩn danh",
+                NoiDung = entity.NoiDung,
+                ThoiGian = entity.ThoiGian
             };
         }
 

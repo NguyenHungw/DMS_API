@@ -16,7 +16,6 @@ namespace DMS.Domain.Entities
         [EmailAddress]
         public string Email { get; set; } = string.Empty;
         
-        [Required]
         public string MatKhau { get; set; } = string.Empty;
         
         public int VaiTroId { get; set; }
@@ -28,6 +27,8 @@ namespace DMS.Domain.Entities
         public PhongBan? PhongBan { get; set; }
         
         public string TrangThai { get; set; } = "Active"; // Active, Inactive, Blocked
+        
+        public string? HinhAnh { get; set; }
         
         public DateTime NgayTao { get; set; } = DateTime.Now;
     }

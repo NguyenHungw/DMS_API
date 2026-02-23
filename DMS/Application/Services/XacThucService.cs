@@ -42,6 +42,7 @@ namespace DMS.Application.Services
             };
 
             await _repo.LuuNguoiDung(user);
+            await _repo.SaveChangesAsync();
             return null; // Thành công
         }
 
@@ -67,10 +68,10 @@ namespace DMS.Application.Services
 
             var claims = new[]
             {
-                new Claim("sub", user.Id.ToString()),
-                new Claim("email", user.Email),
-                new Claim("name", user.HoTen),
-                new Claim("role", user.VaiTro?.TenVaiTro ?? "User")
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.Name, user.HoTen),
+                new Claim(ClaimTypes.Role, user.VaiTro?.TenVaiTro ?? "User")
             };
 
             var token = new JwtSecurityToken(

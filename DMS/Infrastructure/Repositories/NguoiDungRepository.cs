@@ -12,12 +12,16 @@ namespace DMS.Infrastructure.Repositories
         public async Task<IEnumerable<NguoiDung>> LayTatCaVoiChiTiet() => 
             await _dbSet
                 .Include(u => u.VaiTro)
+                    .ThenInclude(v => v!.VaiTroQuyenHans)
+                    .ThenInclude(vq => vq.QuyenHan)
                 .Include(u => u.PhongBan)
                 .ToListAsync();
         
         public async Task<NguoiDung?> LayTheoIdVoiChiTiet(int id) => 
             await _dbSet
                 .Include(u => u.VaiTro)
+                    .ThenInclude(v => v!.VaiTroQuyenHans)
+                    .ThenInclude(vq => vq.QuyenHan)
                 .Include(u => u.PhongBan)
                 .FirstOrDefaultAsync(u => u.Id == id);
         

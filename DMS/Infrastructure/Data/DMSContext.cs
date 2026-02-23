@@ -85,15 +85,37 @@ namespace DMS.Infrastructure.Data
 
             // Seed data cho NguoiDung với ID tham chiếu
             modelBuilder.Entity<NguoiDung>().HasData(
-                new NguoiDung { Id = 1, HoTen = "Administrator", Email = "admin@company.com", MatKhau = "admin123", VaiTroId = 1, PhongBanId = 1, TrangThai = "Active" },
-                new NguoiDung { Id = 2, HoTen = "Nguyen Van A", Email = "a.nguyen@company.com", MatKhau = "user123", VaiTroId = 2, PhongBanId = 2, TrangThai = "Active" },
-                new NguoiDung { Id = 3, HoTen = "Tran Thi B", Email = "b.tran@company.com", MatKhau = "user123", VaiTroId = 3, PhongBanId = 3, TrangThai = "Active" }
+                new NguoiDung { Id = 1, HoTen = "Administrator", Email = "admin@company.com", MatKhau = BCrypt.Net.BCrypt.HashPassword("admin123"), VaiTroId = 1, PhongBanId = 1, TrangThai = "Active" },
+                new NguoiDung { Id = 2, HoTen = "Nguyen Van A", Email = "a.nguyen@company.com", MatKhau = BCrypt.Net.BCrypt.HashPassword("user123"), VaiTroId = 2, PhongBanId = 2, TrangThai = "Active" },
+                new NguoiDung { Id = 3, HoTen = "Tran Thi B", Email = "b.tran@company.com", MatKhau = BCrypt.Net.BCrypt.HashPassword("user123"), VaiTroId = 3, PhongBanId = 3, TrangThai = "Active" }
             );
+
+            // Cấu hình Unique Index cho Email
+            modelBuilder.Entity<NguoiDung>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
 
             // Seed data cho TaiLieu với ID tham chiếu
             modelBuilder.Entity<TaiLieu>().HasData(
                 new TaiLieu { Id = 1, TenTaiLieu = "Q3_Financial_Internal.pdf", LoaiTaiLieuId = 1, PhongBanId = 2, ChuSoHuuId = 1, DanhMucId = 3, DungLuong = "2.5 MB", TrangThai = "Approved", AccessLevel = "Internal", MoTa = "Finalized financial report for Q3 2025." },
-                new TaiLieu { Id = 2, TenTaiLieu = "Employee_Handbook_Draft.docx", LoaiTaiLieuId = 2, PhongBanId = 3, ChuSoHuuId = 3, DanhMucId = 2, DungLuong = "1.2 MB", TrangThai = "Draft", AccessLevel = "Restricted", MoTa = "Working draft for handbook update." }
+                new TaiLieu { Id = 2, TenTaiLieu = "Employee_Handbook_Draft.docx", LoaiTaiLieuId = 2, PhongBanId = 3, ChuSoHuuId = 3, DanhMucId = 2, DungLuong = "1.2 MB", TrangThai = "Draft", AccessLevel = "Restricted", MoTa = "Working draft for handbook update." },
+                new TaiLieu { Id = 3, TenTaiLieu = "IT_Infrastructure_Upgrade_Proposal.pdf", LoaiTaiLieuId = 1, PhongBanId = 1, ChuSoHuuId = 2, DanhMucId = 1, DungLuong = "4.1 MB", TrangThai = "PendingApproval", AccessLevel = "Internal", MoTa = "Proposal for server upgrades." },
+                new TaiLieu { Id = 4, TenTaiLieu = "Marketing_Campaign_Q1.docx", LoaiTaiLieuId = 2, PhongBanId = 2, ChuSoHuuId = 1, DanhMucId = 1, DungLuong = "0.8 MB", TrangThai = "PendingApproval", AccessLevel = "Internal", MoTa = "Initial campaign plan." }
+            );
+
+            // Seed data cho PhienBanTaiLieu để có thể tải xuống dữ liệu mẫu
+            modelBuilder.Entity<PhienBanTaiLieu>().HasData(
+                new PhienBanTaiLieu { Id = 1, TaiLieuId = 1, SoPhienBan = "1.0", DuongDanFile = "bcdc67c9-6a60-41dd-b62b-0360a8d07a10_main.lua", NgayTao = DateTime.Now, NguoiTaoId = 1, GhiChuThayDoi = "Initial version" },
+                new PhienBanTaiLieu { Id = 2, TaiLieuId = 2, SoPhienBan = "1.0", DuongDanFile = "bcdc67c9-6a60-41dd-b62b-0360a8d07a10_main.lua", NgayTao = DateTime.Now, NguoiTaoId = 3, GhiChuThayDoi = "Initial version" },
+                new PhienBanTaiLieu { Id = 3, TaiLieuId = 3, SoPhienBan = "1.0", DuongDanFile = "bcdc67c9-6a60-41dd-b62b-0360a8d07a10_main.lua", NgayTao = DateTime.Now, NguoiTaoId = 2, GhiChuThayDoi = "Initial version" },
+                new PhienBanTaiLieu { Id = 4, TaiLieuId = 4, SoPhienBan = "1.0", DuongDanFile = "bcdc67c9-6a60-41dd-b62b-0360a8d07a10_main.lua", NgayTao = DateTime.Now, NguoiTaoId = 1, GhiChuThayDoi = "Initial version" }
+            );
+
+            // Seed data cho NhatKyHoatDong
+            modelBuilder.Entity<NhatKyHoatDong>().HasData(
+                new NhatKyHoatDong { Id = 1, NguoiDungId = 1, HanhDong = "LOGIN", DoiTuong = "System", ThoiGian = DateTime.Now.AddHours(-1), IPAddress = "127.0.0.1" },
+                new NhatKyHoatDong { Id = 2, NguoiDungId = 2, HanhDong = "UPLOAD", DoiTuong = "TaiLieu", ChiTiet = "Tải lên IT_Infrastructure_Upgrade_Proposal.pdf", ThoiGian = DateTime.Now.AddHours(-2), IPAddress = "192.168.1.5" },
+                new NhatKyHoatDong { Id = 3, NguoiDungId = 3, HanhDong = "VIEW", DoiTuong = "TaiLieu", ChiTiet = "Xem Employee_Handbook_Draft.docx", ThoiGian = DateTime.Now.AddHours(-3), IPAddress = "192.168.1.10" }
             );
 
             // Xử lý vòng lặp cascade (multiple cascade paths)

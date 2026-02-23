@@ -15,5 +15,7 @@ namespace DMS.API.DTOs
         
         public int? TacGiaId { get; set; }
         public string? TenTacGia { get; set; }
+
+        public List<BinhLuanDto> DanhSachBinhLuan { get; set; } = new();
     }
 }

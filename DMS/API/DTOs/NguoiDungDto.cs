@@ -12,5 +12,8 @@ namespace DMS.API.DTOs
         
         public int? PhongBanId { get; set; }
         public string? TenPhongBan { get; set; }
+
+        public List<string> QuyenHans { get; set; } = new List<string>();
+        public string? HinhAnh { get; set; }
     }
 }

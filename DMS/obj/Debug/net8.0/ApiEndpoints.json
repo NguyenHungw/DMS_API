@@ -116,6 +116,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DMS.Controllers.DanhMucController",
+    "Method": "GetAll",
+    "RelativePath": "api/DanhMuc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.DanhMucController",
+    "Method": "Create",
+    "RelativePath": "api/DanhMuc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DMS.API.DTOs.DanhMucDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.DanhMucController",
+    "Method": "Delete",
+    "RelativePath": "api/DanhMuc/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DMS.Controllers.LookupController",
     "Method": "GetChuyenMuc",
     "RelativePath": "api/Lookup/chuyen-muc",
@@ -255,6 +297,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "DMS.Controllers.NguoiDungController",
+    "Method": "AssignRole",
+    "RelativePath": "api/NguoiDung/{id}/role",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "roleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "DMS.Controllers.NhatKyController",
     "Method": "TatCa",
     "RelativePath": "api/NhatKy",
@@ -262,6 +325,84 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.PermissionController",
+    "Method": "GetAllPermissions",
+    "RelativePath": "api/Permission/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.PermissionController",
+    "Method": "Assign",
+    "RelativePath": "api/Permission/assign",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "DMS.API.DTOs.AssignPermissionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.PermissionController",
+    "Method": "GetRoles",
+    "RelativePath": "api/Permission/roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.ProfileController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.ProfileController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatedUser",
+        "Type": "DMS.API.DTOs.NguoiDungDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.ProfileController",
+    "Method": "UploadAvatar",
+    "RelativePath": "api/Profile/avatar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -283,9 +424,29 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "t",
-        "Type": "DMS.Domain.Entities.TaiLieu",
-        "IsRequired": true
+        "Name": "TenTaiLieu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MoTa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DanhMucId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "LoaiTaiLieuId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -301,6 +462,27 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.TaiLieuController",
+    "Method": "UpdateMetadata",
+    "RelativePath": "api/TaiLieu/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "DMS.API.DTOs.DocumentUploadDto",
         "IsRequired": true
       }
     ],
@@ -327,6 +509,22 @@
     "Method": "BanHanh",
     "RelativePath": "api/TaiLieu/{id}/ban-hanh",
     "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.TaiLieuController",
+    "Method": "Download",
+    "RelativePath": "api/TaiLieu/{id}/download",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -368,6 +566,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.TaiLieuController",
+    "Method": "DanhSachChoDuyet",
+    "RelativePath": "api/TaiLieu/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -468,6 +676,64 @@
     "ContainingType": "DMS.Controllers.ThongBaoController",
     "Method": "Xoa",
     "RelativePath": "api/ThongBao/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.ThongBaoController",
+    "Method": "BinhLuan",
+    "RelativePath": "api/ThongBao/{id}/binh-luan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "c",
+        "Type": "DMS.Domain.Entities.BinhLuan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.ThongBaoController",
+    "Method": "Ghim",
+    "RelativePath": "api/ThongBao/{id}/pin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DMS.Controllers.ThongBaoController",
+    "Method": "XoaBinhLuan",
+    "RelativePath": "api/ThongBao/binh-luan/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

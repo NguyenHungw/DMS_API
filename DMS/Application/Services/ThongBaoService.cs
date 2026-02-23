@@ -25,8 +25,39 @@ namespace DMS.Application.Services
             return data?.ToDto();
         }
 
-        public async Task DangThongBao(ThongBao t) => await _repo.Them(t);
-        public async Task XoaThongBao(int id) => await _repo.Xoa(id);
+        public async Task DangThongBao(ThongBao t) 
+        {
+            await _repo.Them(t);
+            await _repo.SaveChangesAsync();
+        }
+        public async Task XoaThongBao(int id) 
+        {
+            await _repo.Xoa(id);
+            await _repo.SaveChangesAsync();
+        }
+
+        public async Task DangBinhLuan(BinhLuan c)
+        {
+            var thongBao = await _repo.LayTheoIdVoiChiTiet(c.ThongBaoId);
+            if (thongBao != null)
+            {
+                thongBao.DanhSachBinhLuan.Add(c);
+                await _repo.SaveChangesAsync();
+            }
+        }
+
+        public async Task XoaBinhLuan(int id) => await _repo.XoaBinhLuan(id);
+
         public async Task<IEnumerable<ChuyenMuc>> DanhSachChuyenMuc() => await _repo.LayTatCaChuyenMuc();
+
+        public async Task GhimThongBao(int id, bool status)
+        {
+            var news = await _repo.GetByIdAsync(id);
+            if (news != null)
+            {
+                news.IsPinned = status;
+                await _repo.SaveChangesAsync();
+            }
+        }
     }
 }

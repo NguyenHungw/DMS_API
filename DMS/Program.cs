@@ -76,8 +76,8 @@ builder.Services.AddAuthentication(options =>
         ValidIssuer = jwtSettings["Issuer"],
         ValidAudience = jwtSettings["Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(key),
-        NameClaimType = "name",
-        RoleClaimType = "role"
+        NameClaimType = ClaimTypes.Name,
+        RoleClaimType = ClaimTypes.Role
     };
     options.Events = new JwtBearerEvents
     {
@@ -117,6 +117,7 @@ builder.Services.AddScoped<ILookupRepository, LookupRepository>();
 builder.Services.AddScoped<IXacThucRepository, XacThucRepository>();
 builder.Services.AddScoped<IChiaSeRepository, ChiaSeRepository>();
 builder.Services.AddScoped<INhatKyRepository, NhatKyRepository>();
+builder.Services.AddScoped<IDanhMucRepository, DanhMucRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 builder.Services.AddScoped<NguoiDungService>();
@@ -128,6 +129,7 @@ builder.Services.AddScoped<ChiaSeService>();
 builder.Services.AddScoped<NhatKyService>();
 builder.Services.AddScoped<PermissionService>();
 builder.Services.AddScoped<LookupService>();
+builder.Services.AddScoped<DanhMucService>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
@@ -169,6 +171,8 @@ var app = builder.Build();
 
 // Đặt CORS ở ngay đầu pipeline để đảm bảo headers được thêm vào tất cả phản hồi, kể cả redirect
 app.UseCors("AllowFrontend");
+
+app.UseStaticFiles(); // Cho phép phục vụ file tĩnh trong wwwroot
 
 // Tự động tạo CSDL nếu chưa có (Chỉ dùng cho môi trường phát triển)
 using (var scope = app.Services.CreateScope())

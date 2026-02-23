@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Phân quyền - DMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --secondary: #64748b;
+            --success: #10b981;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --sidebar-color: #0f172a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar simple mimic */
+        .sidebar {
+            width: 260px;
+            background-color: var(--sidebar-color);
+            padding: 2rem 1.5rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-item {
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #94a3b8;
+        }
+
+        .nav-item.active {
+            background-color: rgba(99, 102, 241, 0.1);
+            color: var(--primary-light);
+            border-left: 4px solid var(--primary-light);
+        }
+
+        /* Main Content */
+        .main {
+            flex-grow: 1;
+            padding: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            margin-bottom: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .last-updated {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        /* Permission Grid */
+        .roles-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+            gap: 2rem;
+        }
+
+        .role-card {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .role-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .role-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .role-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .perm-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        .perm-item {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            border-radius: 0.4rem;
+            transition: background-color 0.2s;
+        }
+
+        .perm-item:hover {
+            background-color: var(--bg);
+        }
+
+        .perm-checkbox {
+            margin-right: 0.75rem;
+            width: 1.1rem;
+            height: 1.1rem;
+            cursor: pointer;
+            accent-color: var(--primary);
+        }
+
+        .perm-label {
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        .btn-save {
+            margin-top: 1.5rem;
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-save:hover {
+            background-color: var(--primary-light);
+        }
+
+        .btn-save:disabled {
+            background-color: var(--secondary);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        /* Notifications */
+        #toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            color: white;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: none;
+            z-index: 1000;
+        }
+
+        .toast-success {
+            background-color: var(--success);
+        }
+
+        .toast-error {
+            background-color: #ef4444;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .roles-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">DMS Admin</div>
+        <div class="nav-item">Tổng quan</div>
+        <div class="nav-item">Tài liệu</div>
+        <div class="nav-item">Người dùng</div>
+        <div class="nav-item active">Phân quyền</div>
+        <div class="nav-item">Cài đặt</div>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <div>
+                <h1>Quản lý Phân quyền</h1>
+                <p class="last-updated">Cấu hình quyền hạn cho từng cấp độ tài khoản.</p>
+            </div>
+            <div id="status-text" style="font-weight: 500; color: var(--success)">Kết nối API ổn định</div>
+        </div>
+
+        <div id="roles-grid" class="roles-container">
+            <!-- Loading indicator -->
+            <p>Đang tải dữ liệu...</p>
+        </div>
+    </div>
+
+    <div id="toast"></div>
+
+    <script>
+        const API_BASE = '/api/permission';
+
+        async function init() {
+            try {
+                const [rolesRes, permsRes] = await Promise.all([
+                    fetch(`${API_BASE}/roles`),
+                    fetch(`${API_BASE}/all`)
+                ]);
+
+                const roles = await rolesRes.json();
+                const allPermissions = await permsRes.json();
+
+                renderGrid(roles, allPermissions);
+            } catch (err) {
+                console.error(err);
+                showToast('Không thể tải dữ liệu từ API', 'error');
+            }
+        }
+
+        function renderGrid(roles, allPermissions) {
+            const grid = document.getElementById('roles-grid');
+            grid.innerHTML = '';
+
+            roles.forEach(role => {
+                const card = document.createElement('div');
+                card.className = 'role-card';
+
+                const isReadOnly = role.roleName === 'Administrator';
+
+                let permsHtml = '';
+                allPermissions.forEach(p => {
+                    const isChecked = role.permissions.some(rp => rp.id === p.id) ? 'checked' : '';
+                    permsHtml += `
+                        <div class="perm-item">
+                            <input type="checkbox" class="perm-checkbox" 
+                                id="r${role.roleId}-p${p.id}" 
+                                data-role="${role.roleId}" 
+                                data-perm="${p.id}" 
+                                ${isChecked} 
+                                ${isReadOnly ? 'disabled' : ''}>
+                            <label class="perm-label" for="r${role.roleId}-p${p.id}">${p.tenQuyenHan}</label>
+                        </div>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="role-header">
+                        <span class="role-name">${role.roleName}</span>
+                        ${isReadOnly ? '<span style="font-size:0.7rem; color:var(--text-light)">TOÀN QUYỀN (HỆ THỐNG)</span>' : ''}
+                    </div>
+                    <div class="perm-list">
+                        ${permsHtml}
+                    </div>
+                    <button class="btn-save" 
+                        onclick="saveRole(${role.roleId})" 
+                        ${isReadOnly ? 'disabled' : ''}>
+                        Lưu thay đổi
+                    </button>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        async function saveRole(roleId) {
+            const btn = event.target;
+            const checkboxes = document.querySelectorAll(`.perm-checkbox[data-role="${roleId}"]`);
+            const permissionIds = Array.from(checkboxes)
+                .filter(cb => cb.checked)
+                .map(cb => parseInt(cb.dataset.perm));
+
+            btn.disabled = true;
+            btn.textContent = 'Đang lưu...';
+
+            try {
+                const res = await fetch(`${API_BASE}/assign`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ roleId, permissionIds })
+                });
+
+                if (res.ok) {
+                    showToast('Cập nhật quyền thành công!', 'success');
+                } else {
+                    showToast('Có lỗi xảy ra khi lưu', 'error');
+                }
+            } catch (err) {
+                showToast('Lỗi kết nối API', 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Lưu thay đổi';
+            }
+        }
+
+        function showToast(msg, type) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.className = `toast-${type}`;
+            toast.style.display = 'block';
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3000);
+        }
+
+        init();
+    </script>
+</body>
+
+</html>

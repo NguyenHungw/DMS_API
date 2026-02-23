@@ -23,15 +23,21 @@ namespace DMS.Application.Services
         {
             var chiaSe = new ChiaSeTaiLieu { TaiLieuId = taiLieuId, NguoiDuocChiaSeId = userId, QuyenHan = quyen };
             await _repo.ChiaSe(chiaSe);
+            await _repo.SaveChangesAsync();
         }
 
         public async Task ChiaSeChoPhongBan(int taiLieuId, int phongBanId, string quyen)
         {
             var chiaSe = new ChiaSeTaiLieu { TaiLieuId = taiLieuId, PhongBanDuocChiaSeId = phongBanId, QuyenHan = quyen };
             await _repo.ChiaSe(chiaSe);
+            await _repo.SaveChangesAsync();
         }
 
-        public async Task ThuHoi(int id) => await _repo.ThuHoiChiaSe(id);
+        public async Task ThuHoi(int id) 
+        {
+            await _repo.ThuHoiChiaSe(id);
+            await _repo.SaveChangesAsync();
+        }
 
         public async Task<bool> CoQuyen(int taiLieuId, int userId, string quyen) 
             => await _repo.KiemTraQuyenTruyCap(taiLieuId, userId, quyen);
